@@ -42,9 +42,6 @@ header nav .left a:hover{
 header nav{
     padding:2rem 0;
 }
-header nav .branding{
-    margin-right:3rem;
-}
 .me .left img{
     width:400px;
 }
@@ -75,20 +72,110 @@ header nav .branding{
 .me .right {
     margin-top:-7rem;
 }
+@media(max-width: 1024px){
+    header #main-nav{
+        display: none;
+    }
+}
+.site-main-rapper{
+    position: relative;
+}
+.hamberger{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.hamberger img{
+    width: 30px;
+}
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out; 
+    -moz-transition: all .5s ease-in-out;
+    -ms-transition:all .5s ease-in-out;
+    -o-transition:all .5s ease-in-out;
+}
+.open{
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+.times{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.times img{
+    width: 40px;
+}
+.mobile-nav ul{
+    list-style-type: none;
+}
+.mobile-nav ul li a{
+    color:var(--dark); 
+    text-decoration: none;
+    font-size: 2rem;
+}
+@media (max-width:1024px){
+    header #main-nav{
+        display: none;
+    }
+    .hero .right img{
+        width: 260px;
+    }
+    .hero .right h1{
+        font-size: 3rem;
+    }
+    .hero{
+        padding-top: 10rem;
+    }
+  
+}
+
+
+
 .Column {
     padding: 20%;
     background: #3DCFD3;
-    width: 60%;
+    width: 50%;
     float: left;
-    margin: 20px;    
+    margin: 20px; 
+      
 }
 .Column2 {
     padding: 20%;
     background: #3DCFD3;
-    width: 60%;
+    width: 50%;
     float: left;
     margin: 20px;
 }
+   
+
 *
 {
     margin: 0;
@@ -229,7 +316,7 @@ header nav .branding{
     padding: 10px;
     font-size: 18px;
 }
-@media (max-width: 991px)
+@media (max-width: 1250px)
 {
     .contact
     {
@@ -248,3 +335,95 @@ header nav .branding{
         width: 100%;
     }
 }
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid #161616(0,0,0,0,0.05);
+}
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.blog-heading span{
+    color: #3DCFD3;
+}
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #898989;
+    font-weight: 600;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.blog-box{
+    width: 500px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    margin: 20px;
+}
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+.blog-img img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color: #3DCFD3;
+    font-size: 0.9rem;
+}
+@media(max-width:1250px){
+    .blog-box1{
+        width: 300px;
+    }
+}
+@media(max-width:1100px){
+    .blog-box{
+        width:70%;
+    }
+}
+@media(max-width:550px){
+    .blog-box{
+        margin: 20px 10px;
+        width: 100%;
+    }
+    #blog{
+        padding: 20px;
+    }
+}
+
+
+#report{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid #161616(0,0,0,0,0.05);
+}
+.report-heading h3{
+    color: #3DCFD3;
+}
+.report-heading p{
+    font-size: 2.4rem;
+    color: #898989;
+    font-weight: 600;
+}    

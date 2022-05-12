@@ -6,34 +6,49 @@
         <title> Home page </title>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet" type="text/css">
+        <script src="script.js"></script>
     </head>    
     <body>
-         <header>
-             <div class="container">
-             <nav class="flex items-center">
-                 <div class="left flex items-center">
-                     <div class="branding">
-                     </div>
-
-                    <div>
-                        <a href="index.html">Home</a>
-                        <a href="portfolio.html">Portfolio</a>
-                        <a href="contact.html">Contact</a>
-                        <a href="blog.html">Blog</a>
-                        <a href="#">Site Report</a>
-                    </div>   
-              </nav>
-              <div class="me flex items-center justify-between">
-                  <div class="left flex-1 flex justify-center">
-                      <img src="./images/photo1.img.jpg" alt="">
-                  </div>
-                  <div class="right flex-1">
-                      <h6>Portfolio</h6>
-                      <h1>Hi, I'm Prajwal.</h1>
-                      <p>This is the home page of my portfolio.</p>
-                  </div>    
-              </div>
-              </div>
-         </header>
+        <div class="site-main-rapper">
+            <button class="hamberger">
+                <img src="./images/hamburger2.webp" alt="">
+            </button>
+            <div class="mobile-nav">
+                <button class="times"><img src="./images/cross.webp" alt=""></button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="sitereport.html">Site Report</a></li>
+                </ul>
+            </div>
+            <header>
+                <div class="container">
+                 <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div>
+                            <a href="index.html">Home</a>
+                            <a href="portfolio.html">Portfolio</a>
+                            <a href="contact.html">Contact</a>
+                            <a href="blog.html">Blog</a>
+                            <a href="sitereport.html">Site Report</a>
+                        </div>
+                    </div> 
+                 </nav>      
+                      <div class="me flex items-center justify-between">
+                      <div class="left flex-1 flex justify-center">
+                          <img src="./images/photo1.img.jpg" alt="">
+                      </div>
+                      <div class="right flex-1">
+                          <h6>Portfolio</h6>
+                          <h1>Hi, I'm Prajwal.</h1>
+                          <p>This is the home page of my portfolio.</p>
+                      </div>    
+                      </div>
+                </div>
+             </header>
+        </div>
+         
     </body>    
 </html>
