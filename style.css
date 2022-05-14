@@ -153,8 +153,7 @@ header nav{
     }
     .hero{
         padding-top: 10rem;
-    }
-  
+    }  
 }
 
 
@@ -165,7 +164,6 @@ header nav{
     width: 50%;
     float: left;
     margin: 20px; 
-      
 }
 .Column2 {
     padding: 20%;
@@ -364,9 +362,10 @@ header nav{
     align-items: center;
     margin: 20px 0px;
     flex-wrap: wrap;
+    background: url(./images/photo3.img.jpg);
 }
 .blog-box{
-    width: 500px;
+    width: 600px;
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
     margin: 20px;
@@ -421,9 +420,40 @@ header nav{
 }
 .report-heading h3{
     color: #3DCFD3;
+    font-size: 2.3rem;
 }
 .report-heading p{
-    font-size: 2.4rem;
-    color: #898989;
+    font-size: 1rem;
+    color: var(--dark);
     font-weight: 600;
-}    
+} 
+.validate1{
+    width: 300px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    margin: 20px;
+    float: left;
+}
+.validate1-img{
+    width: 100%;
+    height: auto;
+} 
+.validate1-img img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.text{
+    color: var(--primary);
+}  
+.validate1-text span{
+    color: var(--dark);
+}
+.first h1{
+    color: var(--primary);
+} 
+.first p{
+    font-size: 1rem;
+    color: var(--dark);
+    font-weight: 600;
+}   
